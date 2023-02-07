@@ -1,0 +1,18 @@
+:root {
+    --clr-primary: #0968ed;
+    --clr-red: #fedddf;
+    --clr-green: #e7f6d5;
+    --clr-red-border: #efa5a6;
+    --clr-green-border: #cfe2bd;
+}
+
+.hidden {
+    display: none;
+}
+
+.right-answer {
+    background-color: var(--clr-green);
+}
+.wrong-answer {
+    background-color: var(--clr-red);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quiz App</title>
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+                <span class="highscores">
+                        👉 View Highscores
+                </span>
+                <span class="timer">--</span>
+        </header>
+        <main>
+                <section class="startPage">
+                        <h2>Coding Quiz Challenge</h2>
+                        <p>Try o answer to follwing code-related questions within the time limit.</p>
+                        <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button id="start-quiz">Start Quiz</button>
+                </section>
+                <section class="quiz hidden">
+                        <button class="next">Next</button>
+                </section>
+                <section class="score hidden">
+                        <h2>All Done!</h2>
+                        <p>Your final score is <span id="finalScore"></span>.</p>
+                        <form id="details">
+                                <label for="inital">Enter intials : </label>
+                                <input type="text" name="initial" id="inital" required>
+                                <button type="submit" id="submit">Submit</button>
+                        </form>
+                </section>
+                <section class="leaderboard hidden">
+                        <button class="back">Go Back</button>
+                        <button class="reset">Reset Highscores</button>
+                </section>
+        </main>
+
+        <script src="quiz.js"></script>
+</body>
+
+</html>
